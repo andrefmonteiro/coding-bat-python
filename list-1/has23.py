@@ -7,9 +7,14 @@ has23([4, 3]) → True
 has23([4, 5]) → False
 '''
 
+
 def has23(nums):
     for n in nums:
         if n == 2 or n == 3:
             return True
-    
+
     return False
+
+    '''Alternative:
+    return 2 in nums or 3 in nums
+    '''
